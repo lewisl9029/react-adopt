@@ -35,10 +35,9 @@ export declare type RPC<RP, P = {}> = React.ComponentType<
 >
 
 export declare type MapperComponent<RP, P> = React.ComponentType<
-  RP &
-    P & {
-      render?: ChildrenFn<any>
-    }
+  P & {
+    render?: ChildrenFn<RP>
+  }
 >
 
 export declare type MapperValue<RP, P> =
